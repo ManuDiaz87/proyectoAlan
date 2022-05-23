@@ -1,0 +1,399 @@
+/* 
+    ESTILOS GENERALES
+*/ 
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Raleway", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+/* ANIMACIONES */
+
+@keyframes logoDesplazamiento{
+    0%{
+        transform: translateX(-31em);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes animacionOpacidad{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+.top{
+    position: relative;
+ 
+}
+.top span{
+    color: #71b1b2;
+    left: 0;
+    padding: .5em;
+    background: #fff;
+    position: absolute;
+    text-align: center;
+   /* width: 5em; */
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.oferta{
+    position: relative;
+}
+.oferta span{
+    position: absolute;
+    font-size: .7em;
+    /*width: 3em;*/
+    padding: 1.2em 0.2em;
+    border-radius: 100%;
+    background: #426869;
+    left: 40px;
+    top: 10px;
+    font-weight: bold;
+    transform: rotate(15deg);
+    border: 2px solid #fff;
+    letter-spacing: 1.3px;
+}
+p{
+    color:#fff;
+}
+h1,h2,h3,h4,h5{
+    color: #fff;
+}
+.titular{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+hr{
+    background-color: #71b1b2;
+    height: 1.5px;
+    opacity: 1;
+    margin-bottom: 1.5em;
+    border:none;
+}
+.active{
+    border-bottom: 1.5px solid #71b1b2;
+}
+/* 
+    SECCION MENU
+*/
+.contenedor-menu{
+    padding: 1em 0;
+    background: black;
+}
+.contenedor-menu .contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor-menu .logo{
+    display: flex;
+    align-items: center;
+    animation-name: logoDesplazamiento;
+    animation-duration: 1s;
+}
+.contenedor-menu .logo span{
+    color: #fff;
+    margin-left: .5em;
+}
+.contenedor-menu .logo img{
+    width: 4.3em;
+}
+.contenedor-menu .menu-navegacion ul{
+    display: flex;
+}
+.contenedor-menu .menu-navegacion ul li{
+    margin-right: 1em;
+}
+.contenedor-menu .menu-navegacion ul li a{
+    color: #fff;
+    padding: .7em;
+}
+
+.contenedor-menu .menu-navegacion ul li a:hover{
+    transition: all .5s ease;
+    background: #71b1b2;
+    border-radius: 5px;
+}
+
+/* 
+    SECCION BIENVENIDA
+*/
+
+.seccion-bienvenida {
+    background: url('../img/viaje3-min.jpg');
+    background-position:center;
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+}
+.seccion-bienvenida .contenedor{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    color: #fff;
+}
+
+.seccion-bienvenida h2{
+    margin-bottom: 0.2em;
+}
+.seccion-bienvenida h4{
+    margin-bottom: 2em;
+}
+.seccion-bienvenida a{
+    display: block;
+    color: #fff;
+    margin: 1em auto;
+    width: 6.9em;
+    background: #71b1b2;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+.seccion-bienvenida a:hover{
+    transition: all .3s ease;
+    opacity: .7;
+}
+/*
+    MAIN CONTENIDO PRINCIPAL
+*/
+.contenido-principal{
+    background: #000;
+    padding: 2em 0;
+}
+
+/* SECCION NOSOTROS */
+.nosotros{
+    margin-top: 2em;
+}
+.nosotros .fila{
+    gap: 1em;
+    display: flex;
+}
+.nosotros .columna p{
+    margin: 0.5em 0;
+    line-height: 1.5;
+}
+.nosotros .columna .contenedor-icono {
+    background: #71b1b2;
+    padding: .5em 0;
+}
+.nosotros .columna .contenedor-icono i{
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+/* SECCION TOURS */
+.tours{
+    margin-top: 5em;
+    padding-bottom: 2em;
+}
+.tours .fila{
+    display: flex;
+    gap: 1em;
+}
+.tours .columna img{
+    max-width: 100%;
+}
+.tours .columna h4, .tours .columna p{
+
+    line-height: 1.3;
+    margin: 1em 0;
+}
+.btn-tour{
+    text-align: center;
+    display: block;
+    color: #fff;
+    width: 5em;
+    background: #71b1b2;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+.btn-tour:hover{
+    transition: all .3s ease;
+    opacity: .7;
+}
+
+/*
+    SECCION PIE DE PÁGINA
+*/
+.pie-pagina{
+    background: rgb(113, 177, 178);
+    padding: 1em 0;
+}
+.pie-pagina .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.pie-pagina .fila h4{
+    font-size: 1.5em;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+.pie-pagina .fila p {
+    margin-bottom: .4em;
+}
+.pie-pagina .columna-contacto i{
+    margin-right: .5em;
+    font-size: 1.1em;
+}
+.pie-pagina hr{
+    background: #fff;
+    margin-bottom: .7em;
+}
+.pie-pagina .columna-redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1.5em;
+}
+.pie-pagina .columna-redes a{
+    color: #fff;
+    opacity: .8;
+    font-size: 2em;
+    margin-right: .7em;
+}
+.pie-pagina .columna-redes a:hover{
+    transition: all .5s ease;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/*
+    Pagina contacto
+*/
+
+.bienvenida-contacto{
+    background-image: linear-gradient(
+        rgba(113, 177, 178, 0.20),
+        rgba(113, 177, 178,0.30)
+    ),
+    url(../img/viaje1-min.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: .5px .7px #000;
+}
+
+.form{
+    padding: 2em 0;
+    background: #000;
+
+}
+.form .btn-tour{
+    margin: auto;
+    border-radius: 0;
+}
+.form .fila{
+    display: flex;
+}
+.form img{
+    max-width: 80%;
+    margin-bottom: .5em;
+}
+
+.form label, .form input, .form textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: .5em;
+}
+.form input{
+    padding:.3em;
+    width: 96%;
+}
+.form .columna{
+    width: 21.8em;
+    margin: auto;
+    padding: 1.5em 2em;
+    background: #71b1b296;
+    color: #fff;
+    border-radius: 3px;
+}
+.form .columna-info {
+    text-align: center;
+}
+.form .columna-info p{
+    margin-bottom:1.5em;
+}
+.form .columna-info h4{
+    margin-bottom: .7em;
+}
+.form .btn-enviar{
+    display: block;
+    margin: auto;
+    margin-top: 1.5em;
+    padding: .5em 1em;
+    border-radius: 3px;
+    border: 1px solid;
+    background: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+.form .btn-enviar:hover{
+    transition: all .5s ease;
+    cursor: pointer;
+    background:#fff;
+    color: #71b1b2;
+}
+
+/* ERROR 404 */
+
+.error{
+    height: 85vh;
+    background-color: #66AAC8;
+}
+.error .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.error .contenedor i{
+    font-size: 1em;
+    margin-right: .5em;
+    color: #fff;
+}
+.error .contenedor p:first-child{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: .8rem;
+}
+.error .contenedor p{
+    font-size: 1.5em;
+}
+.error .contenedor a{
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #426869;
+    color: #fff;
+}
+.error .contenedor a:hover{
+    transition: all .5s ease;
+    cursor: pointer;
+    opacity: .7;
+}

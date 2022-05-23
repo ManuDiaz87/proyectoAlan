@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+    
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- ARCHIVO CSS PERSONALIZADO-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Mi sitio web</title>
+</head>
+
+<body>
+
+    <header class="contenedor-menu">
+        <div class="contenedor">
+
+            <div class="logo">
+               <a href="index.html"> <img src="img/logo.png" alt=""></a>
+                <span>Viajes S.A </span> 
+            </div>
+
+            <nav class="menu-navegacion">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <section class="seccion-bienvenida bienvenida-contacto">
+        <div class="contenedor">
+            <h2>Contacto</h2>
+            <h4>Realizanos tu consulta a traves de nuestro formulario</h4>
+            <p>A la brevedad nos comunicaremos con usted!</p>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="contenedor">
+            <div class="fila">
+                <div class="columna columna-form">
+                    <form action="error.html" method="POST">
+                        <div>
+                            <label for="nombre">Ingrese su nombre:</label>
+                            <input type="text" name="nombre" id="nombre" required>
+                        </div>
+                        <div>
+                            <label for="correo">Ingrese su email:</label>
+                            <input type="email" name="correo" id="correo" required>
+                        </div>
+                        <div>
+                            <label for="telefono">Ingrese su teléfono:</label>
+                            <input type="text" name="telefono" id="telefono" required>
+                        </div>
+
+                        <div>
+                            <label for="fecha">Ingrese su fecha de nacimiento:</label>
+                            <input type="text" name="fecha" id="fecha" required>
+                        </div>
+                        <div>
+                            <label for="consulta">Ingrese su consulta: </label>
+                            <textarea name="consulta" id="consulta" rows="10" required></textarea>
+                        </div>
+
+                        <button class="btn-enviar" type="submit">Enviar consulta</button>
+                    </form>
+                </div>
+
+                <div class="columna columna-info">
+                    <h4 class="titulo-tour">Mexico Tour</h4>
+                    <div class="oferta">
+                        <img src="img/card3-min.jpg" alt="">
+                        <span>OFERTA</span>
+                    </div>
+                    <p>Aprovecha esta promo temporal en nuestro tour por varias ciudades de Mexico.</p>
+                    <a class="btn-tour" href="error.html">Contratar</a>
+
+                    <hr>
+
+                    <h4 class="titulo-tour">Patagonia Tour</h4>
+                    <div class="oferta">
+                        <img src="img/card2-min.jpg" alt="">
+                        <span>OFERTA</span>
+                    </div>
+                    <p>Oferta especial en nuestro tour por el sur patagonico, no te quedes afuera!</p>
+
+                    <a class="btn-tour" href="error.html">Contratar</a>
+                    <hr>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <div class="fila">
+                <div class="columna columna-contacto">
+                    <h4>Viajes S.A</h4>
+                    <hr>
+                    <p><i class="fab fa-whatsapp"></i> +11 5654 5464</p>
+                    <p><i class="far fa-envelope"></i> juan@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Libertador 578</p>
+                </div>
+                <div class="columna columna-redes">
+                    <h4>Redes Sociales</h4>
+                    <hr>
+                    <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    <a href="http://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
